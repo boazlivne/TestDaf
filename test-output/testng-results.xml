@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17220" started-at="2021-04-25T08:59:50 IDT" finished-at="2021-04-25T09:00:07 IDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17220" started-at="2021-04-25T08:59:50 IDT" finished-at="2021-04-25T09:00:07 IDT">
+      <class name="test.TestDafYomiHomePage">
+        <test-method status="PASS" signature="initializeWebDriver()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="initializeWebDriver" is-config="true" duration-ms="4115" started-at="2021-04-25T08:59:46 IDT" finished-at="2021-04-25T08:59:50 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebDriver -->
+        <test-method status="PASS" signature="init()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="init" is-config="true" duration-ms="28" started-at="2021-04-25T08:59:50 IDT" finished-at="2021-04-25T08:59:50 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testShowPageView()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="testShowPageView" duration-ms="869" started-at="2021-04-25T08:59:50 IDT" finished-at="2021-04-25T08:59:51 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShowPageView -->
+        <test-method status="PASS" signature="returnBackPage()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="returnBackPage" is-config="true" duration-ms="564" started-at="2021-04-25T08:59:51 IDT" finished-at="2021-04-25T08:59:52 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- returnBackPage -->
+        <test-method status="PASS" signature="testSearchButton()[pri:1, instance:test.TestDafYomiHomePage@2758fe70]" name="testSearchButton" duration-ms="14424" started-at="2021-04-25T08:59:52 IDT" finished-at="2021-04-25T09:00:06 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchButton -->
+        <test-method status="PASS" signature="returnBackPage()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="returnBackPage" is-config="true" duration-ms="1287" started-at="2021-04-25T09:00:06 IDT" finished-at="2021-04-25T09:00:07 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- returnBackPage -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="quitDriver" is-config="true" duration-ms="724" started-at="2021-04-25T09:00:07 IDT" finished-at="2021-04-25T09:00:08 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- test.TestDafYomiHomePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
