@@ -1,37 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="1" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17220" started-at="2021-04-25T08:59:50 IDT" finished-at="2021-04-25T09:00:07 IDT">
+  <suite name="Default suite" duration-ms="48735" started-at="2021-05-03T13:55:41 IDT" finished-at="2021-05-03T13:56:29 IDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17220" started-at="2021-04-25T08:59:50 IDT" finished-at="2021-04-25T09:00:07 IDT">
+    <test name="Default test" duration-ms="48735" started-at="2021-05-03T13:55:41 IDT" finished-at="2021-05-03T13:56:29 IDT">
       <class name="test.TestDafYomiHomePage">
-        <test-method status="PASS" signature="initializeWebDriver()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="initializeWebDriver" is-config="true" duration-ms="4115" started-at="2021-04-25T08:59:46 IDT" finished-at="2021-04-25T08:59:50 IDT">
+        <test-method status="PASS" signature="initializeWebDriver()[pri:0, instance:test.TestDafYomiHomePage@1f36e637]" name="initializeWebDriver" is-config="true" duration-ms="3814" started-at="2021-05-03T13:55:37 IDT" finished-at="2021-05-03T13:55:41 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeWebDriver -->
-        <test-method status="PASS" signature="init()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="init" is-config="true" duration-ms="28" started-at="2021-04-25T08:59:50 IDT" finished-at="2021-04-25T08:59:50 IDT">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.TestDafYomiHomePage@1f36e637]" name="init" is-config="true" duration-ms="27" started-at="2021-05-03T13:55:41 IDT" finished-at="2021-05-03T13:55:41 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testShowPageView()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="testShowPageView" duration-ms="869" started-at="2021-04-25T08:59:50 IDT" finished-at="2021-04-25T08:59:51 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testShowPageView -->
-        <test-method status="PASS" signature="returnBackPage()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="returnBackPage" is-config="true" duration-ms="564" started-at="2021-04-25T08:59:51 IDT" finished-at="2021-04-25T08:59:52 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- returnBackPage -->
-        <test-method status="PASS" signature="testSearchButton()[pri:1, instance:test.TestDafYomiHomePage@2758fe70]" name="testSearchButton" duration-ms="14424" started-at="2021-04-25T08:59:52 IDT" finished-at="2021-04-25T09:00:06 IDT">
+        <test-method status="FAIL" signature="testSearchButton(java.lang.String, java.lang.String)[pri:1, instance:test.TestDafYomiHomePage@1f36e637]" name="testSearchButton" duration-ms="14943" started-at="2021-05-03T13:55:41 IDT" data-provider="test-data" finished-at="2021-05-03T13:55:56 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[בועז]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fdf]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [] but found [fdf]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [] but found [fdf]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at test.TestDafYomiHomePage.testSearchButton(TestDafYomiHomePage.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchButton -->
-        <test-method status="PASS" signature="returnBackPage()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="returnBackPage" is-config="true" duration-ms="1287" started-at="2021-04-25T09:00:06 IDT" finished-at="2021-04-25T09:00:07 IDT">
+        <test-method status="PASS" signature="testSearchButton(java.lang.String, java.lang.String)[pri:1, instance:test.TestDafYomiHomePage@1f36e637]" name="testSearchButton" duration-ms="12973" started-at="2021-05-03T13:55:56 IDT" data-provider="test-data" finished-at="2021-05-03T13:56:09 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[חתול]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- returnBackPage -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:test.TestDafYomiHomePage@2758fe70]" name="quitDriver" is-config="true" duration-ms="724" started-at="2021-04-25T09:00:07 IDT" finished-at="2021-04-25T09:00:08 IDT">
+        </test-method> <!-- testSearchButton -->
+        <test-method status="PASS" signature="testSearchButton(java.lang.String, java.lang.String)[pri:1, instance:test.TestDafYomiHomePage@1f36e637]" name="testSearchButton" duration-ms="20754" started-at="2021-05-03T13:56:09 IDT" data-provider="test-data" finished-at="2021-05-03T13:56:29 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[לא נמצאו תוצאות]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchButton -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:test.TestDafYomiHomePage@1f36e637]" name="quitDriver" is-config="true" duration-ms="647" started-at="2021-05-03T13:56:29 IDT" finished-at="2021-05-03T13:56:30 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

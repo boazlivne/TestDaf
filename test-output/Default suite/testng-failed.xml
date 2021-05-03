@@ -6,7 +6,7 @@
       <class name="test.TestDafYomiHomePage">
         <methods>
           <include name="quitDriver"/>
-          <include name="testSearchButton"/>
+          <include name="testSearchButton" invocation-numbers="0"/>
           <include name="returnBackPage"/>
           <include name="initializeWebDriver"/>
           <include name="init"/>
