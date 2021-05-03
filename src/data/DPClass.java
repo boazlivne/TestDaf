@@ -15,7 +15,7 @@ public class DPClass {
 	@DataProvider(name = "test-data")
   	public static Object[][] dataProvFunc(){
         	return new Object[][]{
-        		{"בועז","fdf"},
+        		{"בועז",""},
         		{"חתול",""},
         		{"Selenium","לא נמצאו תוצאות"}
         	};
